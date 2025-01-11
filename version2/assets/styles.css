@@ -1,0 +1,395 @@
+/* Reset & Base Styles */
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: "Menlo", "Monaco", "Courier New", monospace;
+}
+
+/* Terminal Container */
+.terminal-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Navigation Styles */
+.terminal-nav {
+  background-color: #1e1e1e;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.nav-prompt {
+  color: #98c379;
+  font-size: 0.9rem;
+}
+
+.terminal-nav-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #61afef;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #c678dd;
+  background: none;
+}
+
+/* Terminal Header */
+.terminal-header {
+  background-color: #2d2d2d;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-button.close {
+  background-color: #ff5f56;
+}
+.terminal-button.minimize {
+  background-color: #ffbd2e;
+}
+.terminal-button.maximize {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  color: #9da5b4;
+  font-size: 0.9rem;
+}
+
+/* Terminal Content */
+.terminal-content {
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.command-line {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  color: #98c379;
+  margin-right: 8px;
+}
+
+.command {
+  color: #61afef;
+}
+
+.output {
+  color: #abb2bf;
+  margin: 1rem 0 2rem 1rem;
+  line-height: 1.6;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #61afef;
+}
+
+.profile-info h1 {
+  color: #61afef;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.profile-info h2 {
+  color: #98c379;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.skill-category {
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.category-title {
+  color: #c678dd;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #3d3d3d;
+  padding-bottom: 0.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  color: #abb2bf;
+  transition: background-color 0.2s ease;
+}
+
+.skill-item:hover {
+  background-color: #2d2d2d;
+  border-radius: 4px;
+}
+
+.skill-item i {
+  font-size: 1.2rem;
+  color: #61afef;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.skills-list li {
+  margin: 0.5rem 0;
+}
+
+.highlight {
+  color: #e5c07b;
+}
+
+/* Contact Section */
+.contact-json {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.connect-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.terminal-btn {
+  background-color: #2d2d2d;
+  color: #61afef;
+  border: 1px solid #61afef;
+  padding: 0.5rem 0rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.terminal-btn:hover {
+  background-color: #61afef;
+  color: #1e1e1e;
+}
+
+.contact-links .terminal-btn {
+  width: 100%;
+}
+
+.contact-links .terminal-btn i {
+  margin-right: 0.5rem;
+}
+
+/* Tooltip Styles */
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .terminal-container {
+    margin: 1rem;
+  }
+
+  .terminal-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .terminal-nav-right {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .connect-buttons,
+  .contact-links {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .terminal-btn {
+    text-align: center;
+  }
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2d2d2d;
+  color: #98c379;
+  border: 1px solid #3d3d3d;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: "Menlo", "Monaco", "Courier New", monospace;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.floating-button:hover {
+  background-color: #3d3d3d;
+  transform: translateY(-2px);
+}
+
+.history-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #1e1e1e;
+  border: 1px solid #3d3d3d;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 999;
+}
+
+.history-popup.show {
+  display: block;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  color: #abb2bf;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.history-item:hover {
+  background-color: #2d2d2d;
+}
+
+.history-item .prompt {
+  color: #98c379;
+  font-size: 0.9rem;
+}
+
+.history-item .command {
+  color: #61afef;
+  font-size: 0.9rem;
+}
+
+.history-timestamp {
+  color: #5c6370;
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+
+
+/* 테마 전환 버튼 스타일 */
+.theme-toggle-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+  }
+  
+  .theme-toggle-button:hover {
+    background-color: #444;
+    transform: scale(1.1);
+  }
+  
+  /* 다크 모드 시 버튼 색상 */
+  .dark-mode .theme-toggle-button {
+    background-color: #f0f0f0;
+    color: #2d2d2d;
+  }
+  

@@ -1,0 +1,255 @@
+/* Dark Mode Styles */
+
+/* Reset & Base Styles */
+body {
+  background-color: #121212; /* 완전히 어두운 배경 */
+  color: #e0e0e0; /* 밝은 텍스트 색상 */
+  font-family: "Menlo", "Monaco", "Courier New", monospace;
+}
+
+/* Terminal Container */
+.terminal-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #1e1e1e; /* 다소 밝은 배경 */
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+/* Navigation Styles */
+.terminal-nav {
+  background-color: #1c1c1c; /* 다크 네비게이션 배경 */
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333; /* 강조된 하단 경계선 */
+}
+
+.nav-prompt {
+  color: #81c784; /* 초록색 톤 */
+  font-size: 0.9rem;
+}
+
+.terminal-nav-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #4fc3f7; /* 밝은 파란색 */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #81d4fa; /* 밝은 파란색으로 강조 */
+}
+
+/* Terminal Header */
+.terminal-header {
+  background-color: #222; /* 어두운 헤더 */
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #444; /* 강조된 하단 경계선 */
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-button.close {
+  background-color: #e57373; /* 빨간색 */
+}
+.terminal-button.minimize {
+  background-color: #ffb74d; /* 주황색 */
+}
+.terminal-button.maximize {
+  background-color: #81c784; /* 초록색 */
+}
+
+.terminal-title {
+  color: #a0a0a0; /* 중간 밝기 텍스트 */
+  font-size: 0.9rem;
+}
+
+/* Terminal Content */
+.terminal-content {
+  padding: 1.5rem;
+  color: #e0e0e0; /* 밝은 텍스트 색상 */
+}
+
+.command-line {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  color: #81c784; /* 초록색 */
+  margin-right: 8px;
+}
+
+.command {
+  color: #4fc3f7; /* 파란색 */
+}
+
+.output {
+  color: #bdbdbd; /* 중간 밝기 텍스트 */
+  margin: 1rem 0 2rem 1rem;
+  line-height: 1.6;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  background-color: #1e1e1e; /* 다크 배경 */
+  border: 1px solid #333; /* 경계선 */
+}
+
+.profile-image {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #4fc3f7; /* 밝은 파란색 */
+}
+
+.profile-info h1 {
+  color: #4fc3f7; /* 밝은 파란색 */
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.profile-info h2 {
+  color: #81c784; /* 초록색 */
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+  background-color: #1c1c1c; /* 다크 배경 */
+}
+
+.skill-category {
+  border: 1px solid #333; /* 경계선 */
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #222; /* 다크 카드 배경 */
+}
+
+.category-title {
+  color: #81d4fa; /* 밝은 파란색 */
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333; /* 경계선 */
+  padding-bottom: 0.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  color: #bdbdbd; /* 중간 밝기 텍스트 */
+  transition: background-color 0.2s ease;
+  background-color: #1c1c1c; /* 다크 카드 배경 */
+}
+
+.skill-item:hover {
+  background-color: #333; /* 강조된 카드 배경 */
+}
+
+.skill-item i {
+  font-size: 1.2rem;
+  color: #4fc3f7; /* 밝은 파란색 */
+}
+
+/* Contact Section */
+.contact-json {
+  background-color: #1e1e1e; /* 다크 배경 */
+  color: #e0e0e0; /* 밝은 텍스트 */
+  border: 1px solid #333; /* 경계선 */
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-links .terminal-btn {
+  background-color: #333; /* 다크 배경 */
+  color: #81d4fa; /* 밝은 파란색 */
+  border: 1px solid #444; /* 경계선 */
+}
+
+.contact-links .terminal-btn:hover {
+  background-color: #4fc3f7; /* 강조된 파란색 */
+  color: #121212; /* 어두운 텍스트 */
+}
+
+/* Tooltip Styles */
+.tooltip {
+  background-color: #333; /* 어두운 배경 */
+  color: #e0e0e0; /* 밝은 텍스트 */
+}
+
+/* Floating Button */
+.theme-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #333; /* 어두운 배경 */
+  color: #81c784; /* 초록색 */
+  border: 1px solid #444; /* 경계선 */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+.theme-toggle-button:hover {
+  background-color: #444; /* 강조된 배경 */
+}
+
+.dark-mode .theme-toggle-button {
+  background-color: #e0e0e0; /* 밝은 배경 */
+  color: #333; /* 어두운 텍스트 */
+}
+
+/* History Popup */
+.history-popup {
+  background-color: #1e1e1e; /* 다크 배경 */
+  border: 1px solid #333; /* 경계선 */
+  color: #e0e0e0; /* 밝은 텍스트 */
+}
