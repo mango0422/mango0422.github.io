@@ -8,8 +8,7 @@ A static portfolio project showcasing personal skills and contact information
 - **`src/`** : Source files including pages, components, router, and utilities.
 - **`styles/`**: Stylesheets for layout, components, and theming.
 
-## Usage
-
+<!--
 ## Start Server
 
 1. Install dependencies:
@@ -17,3 +16,4 @@ A static portfolio project showcasing personal skills and contact information
    pnpm install
    ```
 # profile
+-->
